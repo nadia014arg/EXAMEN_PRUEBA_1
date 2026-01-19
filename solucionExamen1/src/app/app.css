@@ -1,0 +1,23 @@
+
+header{
+height: 15vh;
+background-color: lightskyblue;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+main{
+    min-height: 80vh;
+}
+
+footer{
+    height: 5vh;
+    background-color: lightskyblue;
+}

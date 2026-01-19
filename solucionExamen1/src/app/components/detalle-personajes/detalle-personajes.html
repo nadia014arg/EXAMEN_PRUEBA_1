@@ -1,0 +1,21 @@
+<section *ngIf="datosPersonaje; else cargando">
+    <article>
+        <h1>{{datosPersonaje.name}}</h1>
+       <img [src]="['https://cdn.thesimpsonsapi.com/200'+ datosPersonaje.portrait_path]"  alt="{{datosPersonaje.name}}">
+
+        <div [ngSwitch]="datosPersonaje.gender">
+            <p *ngSwitchCase="'Male'"><strong>Genero: </strong>Masculino</p>
+            <p *ngSwitchCase="'Female'"><strong>Genero:</strong>Female</p>
+            <p *ngSwitchCase="'unknown'"><strong>Genero:</strong>Desconocido</p>
+        </div>
+        <p vale="age"><strong>Edad:</strong>{{datosPersonaje.age}}</p>
+        <p vale="ocupation"><strong>Puesto de trabajo:</strong>{{datosPersonaje.occupation}}</p>
+
+        <button [routerLink]="'/personajes'">VOLVER</button>
+    </article>
+
+</section>
+
+<ng-template #cargando>
+    <p>Cargando datos...</p>
+</ng-template>

@@ -1,0 +1,16 @@
+
+<h2>CREAR CONSULTA</h2>
+
+<form #formConsulta="ngForm" (ngSubmit)="enviar()">
+    <label for="nombre">NOMBRE: </label>
+    <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="this.consultaRealizada.name">
+
+
+    <label for="correoelectronico">CORREO ELECTRONICO</label>
+    <input type="text" name="correoelectronico" #correoelectronico="ngModel" [(ngModel)]="this.consultaRealizada.correoelectronico">
+
+    <label for="mensaje">MENSAJE</label>
+    <textarea name="textarea" #mensaje="ngModel" [(ngModel)]="this.consultaRealizada.mensaje" ></textarea>
+
+    <button type="submit" value="Enviar">Enviar Consulta</button>
+</form>

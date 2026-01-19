@@ -1,0 +1,25 @@
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background-color: rgb(251, 255, 5);
+    gap:30px;
+    padding: 30px;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    background-color: lightskyblue;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.tarjeta h2{
+    height: 200px;
+    margin: 10px;
+    padding: 0px;
+}
